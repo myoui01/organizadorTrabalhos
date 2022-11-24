@@ -1,0 +1,68 @@
+* { 
+   font-family: 'Nunito', sans-serif;
+}
+
+.calc_body {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   background-color: #3559bd;
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+   border-radius: 8px;
+   padding: 10px;
+   justify-content: center;
+   align-items: center;
+   height: 450px;
+
+}
+
+.visor{
+   border: 2px solid #3559bd;
+   background-color: #e4e4e4;
+   color: #000000;
+   border-radius: 8px 8px 0 0;
+   padding: 20px;
+   font-size: 2.5rem;
+}
+
+.num, .oper, .igual, .redireciona {
+   width: 80px;
+   height: 80px;
+   border: none;
+   font-size: 1.5rem;
+   text-align: center;
+   transition: .2s linear all;
+   justify-content: center;
+   align-items: center;
+   background-color: e4e4e4;
+}
+
+.num:hover {
+   background-color: #8b8b8b;
+}
+
+
+.oper:hover {
+   background-color: #8b8b8b;
+   
+}
+
+#igual:hover {
+   background-color: #000000;
+   color: #fafafa;
+   
+}
+
+.redireciona {
+   background-color: #3559bd;}
+
+img {
+   margin-left: 17px;
+   margin-top: 2px;
+}
+
+fieldset {
+   border-radius: 8px;
+   border: 2px solid #3559bd;
+}

@@ -1,0 +1,28 @@
+* {
+    font-family: arial;
+}
+
+form {
+    width: 120px;
+    margin-right: 100px;
+}
+
+fieldset {
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn1 {
+    border-radius: 38px;
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    width: 80px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

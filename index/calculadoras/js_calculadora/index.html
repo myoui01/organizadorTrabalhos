@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculadora</title>
+    <link rel='stylesheet' href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+<form name="calcform" method="post" action=""> 
+    <fieldset>
+        <div class="calculadora">
+            <div class="calc_body">
+                <div class="visor">
+                    <p id="visor">0</p>
+                </div>
+
+                <div class="buttons">
+                    <button class="num">+/-</button>
+                    <button class="num">%</button>
+                    <input type="button" name="limpar" class="num" value="C" onclick="calcLimpar()" />
+                    <input type="button" name="limpar" class="num" value="DEL" onclick="calcLimpar()" />
+
+                    <input type="button" name="num7" class="num" value="7" onclick="calcNum(7)"/>
+                    <input type="button" name="num8" class="num" value="8" onclick="calcNum(8)"/>
+                    <input type="button" name="num9" class="num" value="9" onclick="calcNum(9)"/>
+                    <input type="button" name="subtrair" class="oper" value="-" onclick="calcParse('subtrair')"/>
+
+                    <input type="button" name="num7" class="num" value="4" onclick="calcNum(4)"/>
+                    <input type="button" name="num8" class="num" value="5" onclick="calcNum(5)"/>
+                    <input type="button" name="num9" class="num" value="6" onclick="calcNum(6)"/>
+                    <input type="button" name="subtrair" class="oper" value="x" onclick="calcParse('multiplicar')"/>
+
+                    <input type="button" name="num7" class="num" value="1" onclick="calcNum(1)"/>
+                    <input type="button" name="num8" class="num" value="2" onclick="calcNum(2)"/>
+                    <input type="button" name="num9" class="num" value="3" onclick="calcNum(3)"/>
+                    <input type="button" name="subtrair" id="oper" class="num" value="+" onclick="calcParse('somar')"/>
+
+
+                    <button class="num">.</button>
+                    <input type="button" name="num8" class="num" value="0" onclick="calcNum(0)"/>
+                    <button class="num">,</button>
+                    <td><input type="button" name="igual" class="igual" value="=" onclick="calcParse('resultado')" /></td>
+                    
+                    <button class="redireciona" href="conversor.html"><a href="conversor.html"><img src="img/codigo-binario.png"></a></button>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 30px;
+    
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 30px;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50%;
+    grid-template-areas: 
+        "cabecalho cabecalho" 
+        "principal rodape"
+        "principal rodape";
+}
+
+.principal {
+    grid-area: principal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    color: black;
+    margin-bottom: 100px;
+
+}
+
+.rodape {
+    grid-area: rodape;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    color: black;
+    margin-bottom: 100px;
+
+
+}
+
+

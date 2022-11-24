@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="principal"> 
+    <form method="POST">
+        <fieldset> 
+            <legend><br><strong>Calculadora</strong></legend>
+            <input type="number"id="valor1" name="valor1" placeholder="Valor 1...">
+            <br><br>
+            <input type="number" id="valor2" name="valor2" placeholder="Valor 2...">
+            <br>
+            <div align="center">
+                <br>
+                <input class="bt1" type="button" value="+" id="bt"
+                onclick="soma(valor1.value, valor2.value);">
+                <input class="bt1" type="button" value="-" id="bt"
+                onclick="subtracao(valor1.value, valor2.value);">
+                <input class="bt1" type="button" value="x" id="bt"
+                onclick="multiplicacao(valor1.value, valor2.value);">
+                <input class="bt1" type="button" value="÷" id="bt"
+                onclick="divisao(valor1.value, valor2.value);">
+            </div> 
+            <br>
+            <div align="center"> 
+                <input class="bt1" type="button" value="fatorial!" id="bt"
+                onclick="fatorial(valor1.value);">
+                <input class="bt1" type="button" value="euler" id="bt"
+                onclick="euler(valor1.value);">
+                <input class="bt1" type="button" value="fibonacci" id="bt"
+                onclick="fibonacci(valor1.value);"> 
+            </div>
+            <br><br>
+            <label>Resultado: </label>
+            <input type="text" id="resultado" name="resultado" disabled>
+        </fieldset>
+        <fieldset> 
+            <legend><br><strong>Conversor de sistemas númericos</strong></legend>
+            <input type="number"id="valor1" name="valor1" placeholder="Valor em decimal..."><br>
+            <br>
+            <label>Converter para: </label><br>
+            <select id="oper" name="oper">
+                <option value="binario">Binário</option>
+                <option value="octal">Octal</option>             
+                <option value="hexadecimal">Hexadecimal</option>
+                <input class="bt1" type="button" value="->" id="bt"
+                onclick="conversao(valor1.value);">
+            </select>
+            <br><br>
+            <label>Resultado: </label>
+            <input type="text" id="resultado2" name="resultado" disabled>
+        </fieldset>
+    </form>
+    </main>
+</body>
+</html>
